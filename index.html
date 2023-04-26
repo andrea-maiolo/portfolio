@@ -2,23 +2,30 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Andrea Maiolo - Web Developer Portfolio</title>
+    <title>Andrea Maiolo | Web Developer</title>
+    <link rel="icon" href="/pictures/icon.png">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1>Andrea Maiolo</h1>
-      <h2>Web Developer</h2>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+    <header >
+      <div class="header">
+      <p id="name">Andrea Maiolo</p>
+      <p id="title">Web Developer</p>
+      <nav class="navbar">
+        <ul id="ulNavbar">
+          <a id="linkAbout" class="linkForSection" href="#about">About |</a>
+          <a class="linkForSection" href="#projects">Work |</a>
+          <a class="linkForSection" href="#contact">Contact</a>
         </ul>
       </nav>
+      </div>
     </header>
 
-    <main>
+    <main class="main">
       <section id="about">
         <h3>About Me</h3>
         <p>Hello and welcome to my personal profile! <br>
@@ -31,7 +38,7 @@
           Let us bring your vision to life.
       </section>
 
-      <section id="projects">
+      <!-- <section id="projects">
         <h3>Projects</h3>
         <ul>
           <li>
@@ -97,6 +104,13 @@
                 <p>Here you can find the <a href="https://github.com/andrea-maiolo/library">code</a></p>
             </li>
             <li>
+              <h4>Weather app</h4>
+                <p>add some description</p>
+                <img src="/pictures/weather.png">
+                <p>This site is live at <a href="https://andrea-maiolo.github.io/weather-app/">Here </a></p>
+                <p>Here you can find the <a href="https://github.com/andrea-maiolo/weather-app">code</a></p>
+            </li>
+            <li>
               <h4>shop</h4>
                 <p>add some description</p>
                 <img src="/pictures/ecomProject.png">
@@ -105,7 +119,7 @@
             </li>
             
         </ul>
-   </section>
+   </section> -->
 
       <section id="contact">
         <h3>Contact</h3>
@@ -115,6 +129,8 @@
 
     <footer>
       <p>Copyright © Andrea Maiolo 2023</p>
+      <p><a href="https://www.flaticon.com/free-icons/web-programming" title="web programming icons">Web programming icons created by yoyonpujiono - Flaticon</a></p>
     </footer>
   </body>
+  <script src="main.js"></script>
 </html>
