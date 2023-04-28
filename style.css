@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+/* header with navbar */
 .header {
   position: fixed;
   position: fixed;
@@ -42,11 +43,13 @@ body {
   border-bottom: 2px #000 solid;
 }
 
+/* main page style */
 .main {
   font-family: "Merriweahter", sans-serif;
   margin-top: 7em;
 }
 
+/* about me style */
 #aboutMeTitle {
   font-weight: 300;
   margin: 0.5rem;
@@ -93,6 +96,59 @@ body {
 #myspan {
   grid-area: myspan;
 }
+
+/* work and projects page */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.project-img {
+  flex-basis: 50%;
+}
+
+.project-img img {
+  width: 100%;
+}
+
+.project-desc {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 50px;
+}
+
+.project-desc h3 {
+  margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-img,
+  .project-desc {
+    flex-basis: 100%;
+  }
+
+  .project-desc {
+    padding: 50px 0;
+  }
+}
+
+/* footer and contact  */
 
 .contact {
   background-color: black;
