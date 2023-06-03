@@ -9,27 +9,221 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4148f3e5c9.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header >
-      <div class="header">
-      <p id="name">Andrea Maiolo</p>
-      <p id="title">Web Developer</p>
+
       <nav class="navbar">
-        <ul id="ulNavbar">
-          <a id="linkAbout" class="linkForSection" href="#about">About |</a>
-          <a class="linkForSection" href="#projects">Work |</a>
-          <a class="linkForSection" href="#contact">Contact</a>
+        <h3 id="name"><span class="pencil-underline">Andrea Maiolo</span></h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      </div>
-    </header>
 
-    <main class="main">
-      <h3 id="aboutMeTitle">About Me</h3>
+      <div class="mobile-nav closed-menu">
+        <span>
+          <img src="./pictures/bars-solid.svg" alt="menu" class="burgerIcon"/>
+        </span>
+        <ul class="ulNavbar">
+          <li><a id="linkAbout" class="linkForSection" href="#about">About |</a></li>
+          <li><a class="linkForSection" href="#projects">Work |</a></li>
+          <li><a class="linkForSection" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-main">
+              <div class="hero-text">
+                <h1>Front-end Developer</h1>
+                <img alt="coffee icon" src="./pictures/mug-saucer-solid.svg"/>
+                <p>Hi I' am Andrea a developer based in Italy!</p>
+                <span>
+                  <a href="mylinkedin profile">
+                    <img alt="linkedin icon" src="./pictures/linkedin.svg"/>
+                  </a>
+                  <a href="my github">
+                    <img alt="github icon" src="./pictures/github.svg"/>
+                  </a>
+                  <a href="my email">
+                    <img alt="email icon" src="./pictures/envelope-solid.svg"/>
+                  </a>
+                </span>
+              </div>
+              <div class="hero-img">
+                <img alt="personal picture" id="personal-pic" src="./pictures/personalPic2.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="nonHeroContainers">
+          <div class="about-container">
+            <div class="img-side">
+              <img id="about-img" alt="laptop picture" src="./pictures/arnold-francisca-nPhl2x4fk2s-unsplash.jpg">
+            </div>
+            <div class="text-side">
+              <h3>About me</h3>
+              <h4>Front end developer fueled by passion to learn and <span class="pencil-underline">create</span></h4>
+              <p>
+                I am Andrea Maiolo, a 28 years old Italian <span class="highlights">Front-end developer.</span><br/>
+                What captivates me about coding is its essence of <span class="highlights">problem-solving</span>, continuously presenting
+                new puzzles for me to figure out. 
+                Web development, in particular, appeals to me because it combines the
+                 <span class="highlights">creative</span> process of designing with the 
+                technical aspect of bringing to life a project.
+                As a Junior Front-End Developer, I learned skills in HTML, CSS, JavaScript, React.
+                I am capable of bringing to life responsive websites that offer a smooth user experience.<br/>
+                Actually for <span class="highlights">hire</span>.
+              </p>
+            </div>
+            <div class="skills">
+              <p id="tech-stack">Tech stack</p>
+               <div class="logos">
+                <ul>
+                  <li>
+                     <img alt="html icon" src="./pictures/html5.svg">
+                     <p>HTML</p>
+                  </li>
+                  <li>
+                      <img alt="css icon" src="./pictures/css3-alt.svg">
+                      <p>CSS</p>
+                 </li>
+                 <li>
+                      <img alt="javascript icon" src="./pictures/js.svg">
+                      <p>JavaScript</p>
+                  </li>
+                  <li>
+                      <img alt="react icon" src="./pictures/react.svg">
+                      <p>React</p>
+                  </li>
+                </ul>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="nonHeroContainers" >
+          <div class="project-content">
+            <p>Portfolio</p>
+            <h3>Each project is a unique  <span class="pencil-underline">solution</span> for a need</h3>
+            <div class="projects-grid">
+              <div class="single-proj">
+                <div class="proj-img">
+                  <a target="_blank" href="https://andrea-maiolo.github.io/library-app/">
+                  <img src="./pictures/libraryProject.png" id="proj-1-img" alt="library project"/>
+                  </a>
+                </div>
+                <div class="proj-text">
+                  <h3>BookFindr</h3>
+                  <p>Explore, Collect, and Save Your Favorite Reads!</p>
+                  <div class="stack">
+                    <p>React</p>
+                    <p>Firebase</p>
+                    <p>Css</p>
+                  </div>
+                  <div class="links">
+                    <a target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/library-app">Repo
+                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
+                    </a>
+                    <a target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/library-app/">Live
+                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="single-proj">
+                <div class="proj-text">
+                  <h3>WeatherWise</h3>
+                  <p>Your Personal Weather Forecast Companion. Stay Informed with Real-Time Weather Updates!</p>
+                  <div class="stack">
+                    <p>React</p>
+                    <p>Css</p>
+                  </div>
+                  <div class="links">
+                    <a target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/weather-app/">Repo
+                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
+                    </a>
+                    <a target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/weather-app/">Live
+                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
+                    </a>
+                  </div>
+                </div>
+                <div class="proj-img">
+                  <a target="_blank" href="https://andrea-maiolo.github.io/weather-app/">
+                    <img alt="weather-app project" id="proj-2-img" src="./pictures/weather.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="single-proj">
+                <div class="proj-img">
+                  <a target="_blank" href= "https://andrea-maiolo.github.io/eCommerce/">
+                    <img alt="e-commerce project" id="proj-3-img" src="./pictures/ecomProject.png" />
+                  </a>
+                </div>
+                <div class="proj-text">
+                  <h3>Shoppe</h3>
+                  <p>Buy sdd and hdd card for any computer!</p>
+                  <div class="tech stack">
+                    <p>React</p>
+                    <p>Css</p>
+                  </div>
+                  <div class="links">
+                    <a target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/eCommerce/">Repo
+                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
+                    </a>
+                    <a target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/eCommerce/">Live
+                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="nonHeroContainers">
+          <div class="contatc-content">
+            <div class="contant-title">
+              <p>contact</p>
+              <h3>Dont be shy let get in touch</h3>
+            </div>
+            <div class="contact-icons">
+              <span>
+                icon 
+              </span>
+              <h4>mail or whatever</h4>
+              <p>example.gmail</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="nonHeroContainers">
+          <div class="footerc">
+            <h3>copyright</h3>
+            <div class="footerc-socials">
+              <a>
+                <!-- <img> -->
+                <p>img of socials</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <!-- <main class="main">
       <section id="about">
-        <p class='grid-item' id="reactDeveloper">React Developer</p>
+        <p class='grid-item' id="reactDeveloper">Web Developer</p>
         <img class='grid-item' id="personalPic" src="pictures/personalPic2.jpg">
         <div class='grid-item' id="personalDescription">
           <p>Hello and welcome to my personal profile! <br>
@@ -40,125 +234,49 @@
             I am confident that, with hard work and determination, I can grow as a web developer and make a positive contribution to the industry.<br>
             If you are looking for a driven and enthusiastic web developer, I would be excited to apply my skills to your next project.<br>
             Let us bring your vision to life.</p>
+            <p>Sure! Here's an example of an "About" section for a web developer:
+
+              ---
+              
+              About Me
+              
+              Hello! I'm [Your Name], a passionate and experienced web developer with a keen eye for detail and a love for creating exceptional digital experiences. I thrive on transforming ideas into functional and visually appealing websites that leave a lasting impression on users.
+              
+              My Journey
+              
+              My journey in the world of web development started [X years ago], and since then, I have been on an exciting and continuous learning path. I have gained expertise in various web technologies and frameworks, including HTML5, CSS3, JavaScript, and popular content management systems like WordPress and Drupal.
+              
+              What I Do
+              
+              As a web developer, I specialize in crafting responsive, user-friendly websites that prioritize both aesthetics and functionality. I enjoy translating design concepts into clean, efficient code, ensuring seamless navigation and optimal performance across different devices and browsers.
+              
+              Collaboration and Problem-Solving
+              
+              Collaboration is at the heart of my work. I thrive in team environments and value effective communication, as it helps me understand clients' goals and create tailored solutions that meet their specific needs. I am adept at working closely with designers, content creators, and project stakeholders to ensure smooth development cycles and timely delivery.
+              
+              Continuous Growth
+              
+              Web development is a rapidly evolving field, and I'm committed to staying up-to-date with the latest trends and technologies. I regularly engage in self-paced learning, attend workshops, and participate in online communities to expand my skill set and broaden my perspective.
+              
+              Let's Connect!
+              
+              If you have a project in mind or want to discuss how we can collaborate, I'd love to hear from you! Feel free to reach out via [contact information] to start a conversation. Together, we can bring your vision to life and create a remarkable online presence.
+              
+              ---
+              
+              Feel free to personalize the content to reflect your own experiences, skills, and aspirations as a web developer.</p>
           </div>
           <span class='grid-item' id="myspan"></span>
         <p class='grid-item' id="nameP">Andrea Maiolo</p>
       </section>
-<!-- 
-      <section class="projects">
-        <div class="project">
-          <div class="project-img">
-            <img src="project1.jpg" alt="Project 1">
-          </div>
-          <div class="project-desc">
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis, eros eu blandit pharetra, libero est mollis felis, sit amet accumsan quam nibh vel felis.</p>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-desc">
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis, eros eu blandit pharetra, libero est mollis felis, sit amet accumsan quam nibh vel felis.</p>
-          </div>
-          <div class="project-img">
-            <img src="project2.jpg" alt="Project 2">
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img">
-            <img src="project3.jpg" alt="Project 3">
-          </div>
-          <div class="project-desc">
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis, eros eu blandit pharetra, libero est mollis felis, sit amet accumsan quam nibh vel felis.</p>
-          </div>
-        </div>
-      </section> -->
 
-      <h3>Work</h3>
+      <h3 id='projectsTitle'>Work</h3>
 
       <section class="projects">
+       
         <div class="project">
           <div class="project-img">
-            <img src="/pictures/rpsProject.png">
-          </div>
-          <div class="project-desc">
-            <h4>Rock, paper, scissors game</h4>
-            <p>
-              This project is a basic game of the game rock paper scissors(rps), from The Odin Project.<br>
-              With this project, I used HTML, CSS, and JavaScript, using JS for functions, loops and conditionals statements and teh DOM.<br>
-              You can play the game simply interacting with your mouse on the screen.<br>
-              Hope you like it and may you win!<br>
-              Created by Andy :) <p>
-            <p>The site is live <a href="https://andrea-maiolo.github.io/rockPaperScissor/"> here</a></p>
-            <p>Here you can find the <a href="https://github.com/andrea-maiolo/rockPaperScissor">code</a></p>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-desc"><h4>Etch-a-Sketch</h4>
-            <p>This is a playground for artists!<br>
-              With this project I used HTML, CSS, JavaScript and learned more about DOM and events.<br>
-              Just hover with your mouse on the canvas and you can start drawing.<br>
-              Press the functional button to change colour and explore the other functionalities.<br>
-              Created by Andy :)</p> 
-            </p>
-            <p>This site is live at <a href="https://andrea-maiolo.github.io/etch-a-sketch/">Here </a></p>
-            <p>Here you can find the <a href="https://github.com/andrea-maiolo/etch-a-sketch">code</a></p>
-          </div>
-          <div class="project-img">           
-            <img src="/pictures/easProject.png">
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img">
-            <img src="/pictures/grpProject.png">
-          </div>
-          <div class="project-desc">
-            <h4>Google results page</h4>
-            <p>This is the search result webpage of Google!<br>
-            Sort of... this is my version of it. It won't function the same way but this is to show my knowledge of CSS, HTML and the git workflow.<br> 
-            Created by Andy :)
-            </p>
-            <p>This site is live at <a href="https://andrea-maiolo.github.io/google-results-page/">Here </a></p>
-            <p>Here you can find the <a href="https://github.com/andrea-maiolo/google-results-page">code</a></p>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-desc">
-            <h4>Restaurant website</h4>
-              <p>add soem description</p>
-              <p>This site is live at <a href="https://andrea-maiolo.github.io/restaurantPageWithLinks/#">Here </a></p>
-              <p>Here you can find the <a href="https://github.com/andrea-maiolo/restaurantPageWithLinks">code</a></p>
-          </div>
-          <div class="project-img">
-            <img src="/pictures/rwProject.png">
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img">
-            <img src="/pictures/tdProject.png">
-          </div>
-          <div class="project-desc">
-            <h4>to do list</h4>
-                <p>add some description</p>
-                <p>This site is live at <a href="https://andrea-maiolo.github.io/toDo/">Here </a></p>
-                <p>Here you can find the <a href="https://github.com/andrea-maiolo/toDo">code</a></p>
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-desc">
-            <h4>travel-log</h4>
-            <p>add some description</p>
-            <p>This site is live at <a href="https://andrea-maiolo.github.io/travel-log/">Here </a></p>
-            <p>Here you can find the <a href="https://github.com/andrea-maiolo/travel-log">code</a></p>
-          </div>
-          <div class="project-img">
-            <img src="/pictures/tlProject.png">
-          </div>
-        </div>
-        <div class="project">
-          <div class="project-img">
-            <img src="/pictures/lProject.png">
+            <img src="/pictures/library.png">
           </div>
           <div class="project-desc">
             <h4>library</h4>
@@ -202,7 +320,7 @@
     <p>Copyright © Andrea Maiolo 2023</p>
     <p><a href="https://www.flaticon.com/free-icons/web-programming" title="web programming icons">Web programming icons created by yoyonpujiono - Flaticon</a></p>
   </section>
-    </main>
+    </main> -->
   </body>
-  <script src="main.js"></script>
+  <!-- <script src="main.js"></script> -->
 </html>
