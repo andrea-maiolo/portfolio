@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100%;
   background-color: #e1dfdd;
@@ -42,8 +46,27 @@ nav > ul > li > a {
   color: #2d2e32;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.23s;
   font-size: 1.2rem;
+  position: relative;
+  padding: 0 10px;
+}
+
+nav > ul > li > a::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #147efb;
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  border-radius: 25%;
+  transition: all 0.3s;
+}
+
+nav > ul > li > a:hover::after {
+  width: 110%;
+  transform: rotate(-3deg);
 }
 
 .mobile-nav {
@@ -104,12 +127,13 @@ nav > ul > li > a {
   position: relative;
 }
 
-.hero-text img {
+.hero-text svg {
   height: 6rem;
   position: absolute;
   right: 13rem;
   top: 8.7rem;
   width: 6rem;
+  fill: #2d2e32;
 }
 
 .hero-text h1 {
@@ -140,8 +164,9 @@ nav > ul > li > a {
   font-size: 3rem;
 }
 
-.hero-text span img {
+.hero-text span svg {
   position: inherit;
+  fill: #2d2e32;
   width: 2rem;
   height: 2rem;
 }
@@ -314,28 +339,38 @@ nav > ul > li > a {
   background-color: #fff;
   border-radius: 1.7rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.single-proj:hover {
+  transform: translateY(-10px);
+  box-shadow: 7px 7px 2px rgba(66, 133, 244, 0.1);
 }
 
 #proj-1-img {
   height: 100%;
   max-width: 33rem;
+  border-radius: 4%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #proj-2-img {
   height: 100%;
   max-width: 33rem;
+  border-radius: 4%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #proj-3-img {
   height: 100%;
   max-width: 33rem;
+  border-radius: 4%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .proj-img {
-  border-radius: 1.7rem;
+  border-radius: 25%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* height: auto; */
-  /* width: 53rem; */
 }
 
 .proj-text {
@@ -413,12 +448,12 @@ nav > ul > li > a {
   padding: 11rem 0;
 }
 
-.contact__content {
+.contact-content {
   display: flex;
   flex-direction: column;
 }
 
-.contact__title p {
+.contact-title p {
   color: #147efb;
   font-size: 1.7rem;
   font-weight: 700;
@@ -426,40 +461,61 @@ nav > ul > li > a {
   text-transform: uppercase;
 }
 
-.contact__title h3 {
+.contact-title h3 {
   color: #2d2e32;
   font-size: 2.5rem;
 }
 
-.contact__icons {
+.contact-icons {
   display: flex;
   flex-wrap: wrap;
   gap: 8rem;
   margin-top: 6rem;
+  justify-content: space-evenly;
 }
 
-.contact__icon-box {
+.singleIcon {
   align-items: center;
   display: flex;
   gap: 1.5rem;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
-.contact__icon-box {
-  align-items: center;
+.singleIcon:hover {
+  transform: translateY(-10px);
+  box-shadow: 5px 5px 5px rgba(66, 133, 244, 0.5);
+}
+
+/* .leftIcon {
+  position: absolute;
+  left: -25%;
+}
+
+.rightIcon {
+  position: absolute;
+} */
+
+.singleIcon span img {
+  width: 1.5rem;
+}
+
+.contact-info {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-.contact__icon-box span {
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 2.3rem;
+.contact-info h4 {
+  color: #2d2e32;
+  font-size: 1.5rem;
 }
 
-.contact__icon-box span i {
-  color: #147efb;
-  font-size: 3rem;
+.contact-info a {
+  color: #767676;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-decoration: none;
 }
 
 footer {
@@ -469,17 +525,48 @@ footer {
 }
 
 .footerc {
-  align-items: center;
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  flex-direction: column;
+  gap: 4rem;
 }
 
-footer h3 {
+.footerc p {
   color: #fff;
+  letter-spacing: 0.2ch;
+}
+
+#nameFooter {
+  color: #fff;
+  cursor: pointer;
+  font-family: Raleway, sans-serif;
   font-size: 1.7rem;
 }
 
-.footerc__socials {
+.pencil-underline-footer {
+  position: relative;
+}
+
+.pencil-underline-footer::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 110%;
+  height: 4px;
+  background-color: #147efb;
+  border-radius: 25%;
+  transform: rotate(-3deg);
+}
+
+.footerc-socials {
   display: flex;
   gap: 2rem;
+}
+
+.footerc-socials a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
