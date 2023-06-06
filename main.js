@@ -14,6 +14,9 @@ burgerIcon.addEventListener("click", showMenu);
 
 closeIcon.addEventListener("click", showMenu);
 
+const linksInMobileNav = document.querySelectorAll(".linkForSection");
+linksInMobileNav.forEach((link) => link.addEventListener("click", showMenu));
+
 function showMenu() {
   mobileNav.classList.toggle("closed-menu");
   closeIcon.classList.toggle("closed-menu");
