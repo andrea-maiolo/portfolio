@@ -45,12 +45,10 @@ An e-commerce platform I developed as a part of my web development journey. The 
 
 ## Skills
 
-- **Languages:** HTML, CSS, JavaScript, Python
-- **Front-end:** React.js, Vue.js, Bootstrap
-- **Back-end:** Node.js, Express.js, Django
-- **Database:** MongoDB, MySQL, PostgreSQL
-- **Tools:** Git, Docker, VS Code
-- **Other:** RESTful APIs, GraphQL, Firebase
+- **Languages:** HTML, CSS, JavaScript
+- **Front-end:** React.js
+- **Tools:** Git, VS Code
+- **Other:** RESTful APIs, Firebase
 
 ## Contact
 
