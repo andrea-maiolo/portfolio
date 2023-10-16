@@ -1,256 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Andrea Maiolo, Front-end developer portfolio">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, WebDevelopment, Front-End developer">
-    <meta name="author" content="Andrea Maiolo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Maiolo | Web Developer</title>
-    <link rel="icon" href="/pictures/icon.png">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="root">
-      <nav class="navbar">
-        <h3 id="name"><span class="pencil-underline">Andrea Maiolo</span></h3>
-        <ul>
-          <li><a aria-label="About" href="#about">About</a></li>
-          <li><a aria-label="Work" href="#projects">Work</a></li>
-          <li><a aria-label="Contact" href="#contact">Contact</a></li>
-          <li>
-            <svg alt="menu" class="burgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
-            </svg>
-          </li>
-        </ul>
-      </nav>
 
-      <div class="mobile-nav closed-menu">
-        <span>
-          <img src="./pictures/xmark-solid.svg" alt="close-menu" class="closeIcon closed-menu"/>
-        </span>
-        <ul class="ulNavbar">
-          <li><a aria-label="About" class="linkForSection" href="#about">About</a></li>
-          <li><a aria-label="Work" class="linkForSection" href="#projects">Work</a></li>
-          <li><a aria-label="Contact" class="linkForSection" href="#contact">Contact</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Andrea Maiolo, Front-end developer portfolio">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, WebDevelopment, Front-End developer">
+  <meta name="author" content="Andrea Maiolo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea Maiolo | Web Developer</title>
+  <link rel="icon" href="/pictures/icon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="root">
+    <nav class="navbar">
+      <h3 id="name"><span class="pencil-underline">Andrea Maiolo</span></h3>
+      <div class="toggle-button-cover">
+        <div class="button-cover">
+          <div class="button b2" id="button-10">
+            <input type="checkbox" class="checkbox" id="langButton" />
+            <div class="knobs">
+              <span>EN</span>
+            </div>
+            <div class="layer"></div>
+          </div>
+        </div>
       </div>
+      <ul>
+        <li><a aria-label="About" href="#about">About</a></li>
+        <li><a aria-label="Work" href="#projects">Work</a></li>
+        <li><a aria-label="Contact" href="#contact">Contact</a></li>
+        <li>
+          <svg alt="menu" class="burgerIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+          </svg>
+        </li>
+      </ul>
+    </nav>
 
-      <section id="home" class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <div class="hero-main">
-              <div class="hero-text">
-                <h1>Front-end Developer</h1>
-                <svg id="computerSvg" alt="computer icon "xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
-                  <path d="M384 96V320H64L64 96H384zM64 32C28.7 32 0 60.7 0 96V320c0 35.3 28.7 64 64 64H181.3l-10.7 32H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H277.3l-10.7-32H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm464 0c-26.5 0-48 21.5-48 48V432c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H528zm16 64h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
-                </svg>
-                <p>Hi I' am Andrea a developer based in Italy!</p>
-                <span>
-                  <a aria-label="LinkedIn link"  href="https://www.linkedin.com/in/andrea-maiolo-671196141/">
-                    <svg alt="linkdin icon"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                      <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
-                    </svg>
-                  </a>
-                  <a aria-label="Github link"  href="https://github.com/andrea-maiolo">
-                    <svg alt="github icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                      <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                    </svg>
-                  </a>
-                  <a aria-label="Email"  href="mailto:maiolo.m.2@gmail.com">
-                    <svg alt="email icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                      <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
-                    </svg>
-                  </a>
-                </span>
-              </div>
-              <div class="hero-img">
-                <img alt="personal picture" id="personal-pic" src="./pictures/personalPic2.jpg">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="mobile-nav closed-menu">
+      <span>
+        <img src="./pictures/xmark-solid.svg" alt="close-menu" class="closeIcon closed-menu" />
+      </span>
+      <ul class="ulNavbar">
+        <li><a aria-label="About" class="linkForSection" href="#about">About</a></li>
+        <li><a aria-label="Work" class="linkForSection" href="#projects">Work</a></li>
+        <li><a aria-label="Contact" class="linkForSection" href="#contact">Contact</a></li>
+      </ul>
+    </div>
 
-      <section class="about" id="about">
-        <div class="nonHeroContainers">
-          <div class="about-container">
-            <div class="img-side">
-              <img id="about-img" alt="laptop picture" src="./pictures/arnold-francisca-nPhl2x4fk2s-unsplash.jpg">
-            </div>
-            <div class="text-side">
-              <h3>About me</h3>
-              <h4>Front end developer fueled by passion to learn and <span class="pencil-underline">create</span></h4>
-              <p>
-                I am Andrea Maiolo, a 28 years old Italian <span class="highlights">Front-end developer.</span><br/>
-                What I love about coding is its nature of <span class="highlights">problem-solving</span>, continuously presenting
-                new puzzles for me to figure out.<br/>
-                Web development, in particular, combines the
-                 <span class="highlights">creative</span> process of designing with the 
-                technical aspect of bringing to life a project.<br/>
-                As a Junior Front-End Developer, I learned skills in HTML, CSS, JavaScript, React;
-                which I  use to bring to life websites that are responsive and that offer a smooth user experience.<br/>
-                Actually for <span class="highlights">hire</span>.
-              </p>
-            </div>
-            <div class="skills">
-              <p id="tech-stack">Tech stack</p>
-               <div class="logos">
-                <ul>
-                  <li>
-                     <img alt="html icon" src="./pictures/html5.svg">
-                     <p>HTML</p>
-                  </li>
-                  <li>
-                      <img alt="css icon" src="./pictures/css3-alt.svg">
-                      <p>CSS</p>
-                 </li>
-                 <li>
-                      <img alt="javascript icon" src="./pictures/js.svg">
-                      <p>JavaScript</p>
-                  </li>
-                  <li>
-                      <img alt="react icon" src="./pictures/react.svg">
-                      <p>React</p>
-                  </li>
-                </ul>
-              </div> 
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="projects" id="projects">
-        <div class="nonHeroContainers" >
-          <div class="project-content">
-            <p>Portfolio</p>
-            <h3>Each project is a unique  <span class="pencil-underline">solution</span> for a need</h3>
-            <div class="projects-grid">
-              <div class="single-proj">
-                <div class="proj-img">
-                  <a aria-label="Github project repo"  target="_blank" href="https://andrea-maiolo.github.io/library-app/">
-                  <img src="./pictures/libraryProject.png" id="proj-1-img" alt="library project"/>
-                  </a>
-                </div>
-                <div class="proj-text">
-                  <h3>BookFindr</h3>
-                  <p>Explore, collect, and save your favorite reads!</p>
-                  <div class="stack">
-                    <p>React</p>
-                    <p>Firebase</p>
-                    <p>Css</p>
-                  </div>
-                  <div class="links">
-                    <a aria-label="Github project repo" target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/library-app">Repo
-                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
-                    </a>
-                    <a aria-label="Live site"  target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/library-app/">Live
-                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="single-proj">
-                <div class="proj-text">
-                  <h3>WeatherWise</h3>
-                  <p>Your personal weather forecast companion. Stay informed with real-time weather updates!</p>
-                  <div class="stack">
-                    <p>React</p>
-                    <p>Css</p>
-                  </div>
-                  <div class="links">
-                    <a aria-label="Github project repo" target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/weather-app/">Repo
-                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
-                    </a>
-                    <a aria-label="Live site" target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/weather-app/">Live
-                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
-                    </a>
-                  </div>
-                </div>
-                <div class="proj-img">
-                  <a aria-label="Github project repo"  target="_blank" href="https://andrea-maiolo.github.io/weather-app/">
-                    <img alt="weather-app project" id="proj-2-img" src="./pictures/weather.png" />
-                  </a>
-                </div>
-              </div>
-              <div class="single-proj">
-                <div class="proj-img">
-                  <a aria-label="Github project repo" target="_blank" href= "https://andrea-maiolo.github.io/eCommerce/">
-                    <img alt="e-commerce project" id="proj-3-img" src="./pictures/ecomProject.png" />
-                  </a>
-                </div>
-                <div class="proj-text">
-                  <h3>Shoppe</h3>
-                  <p>Buy sdd and hdd cards for any computer!</p>
-                  <div class="tech stack">
-                    <p>React</p>
-                    <p>Css</p>
-                  </div>
-                  <div class="links">
-                    <a aria-label="Github project repo" target="_blank" class="anchor-proj" href="https://github.com/andrea-maiolo/eCommerce/">Repo
-                      <img alt="github icon" class="icon-proj" src="./pictures/github.svg"/>
-                    </a>
-                    <a aria-label="Live site" target="_blank" class="anchor-proj"  href="https://andrea-maiolo.github.io/eCommerce/">Live
-                      <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg"/>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact" id="contact">
-        <div class="nonHeroContainers">
-          <div class="contact-content">
-            <div class="contact-title">
-              <p>contact</p>
-              <h3>Don't be shy let's <span class="pencil-underline">get in touch</span></h3>
-            </div>
-            <div class="contact-icons">
-              <div class="singleIcon leftIcon">
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-main">
+            <div class="hero-text">
+              <h1>Front-end Developer</h1>
+              <svg id="computerSvg" alt="computer icon " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                <path
+                  d="M384 96V320H64L64 96H384zM64 32C28.7 32 0 60.7 0 96V320c0 35.3 28.7 64 64 64H181.3l-10.7 32H96c-17.7 0-32 14.3-32 32s14.3 32 32 32H352c17.7 0 32-14.3 32-32s-14.3-32-32-32H277.3l-10.7-32H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm464 0c-26.5 0-48 21.5-48 48V432c0 26.5 21.5 48 48 48h64c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48H528zm16 64h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16s7.2-16 16-16zm-16 80c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H544c-8.8 0-16-7.2-16-16zm32 160a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+              </svg>
+              <p class="textInEng onDisplay">Hi I' am Andrea a developer based in Italy!</p>
+              <p class="textInIta hidden">Ciao, sono Andrea, uno sviluppatore con sede in Italia!</p>
               <span>
-                <img alt="email icon" id="mailContactIcon" src="./pictures/envelope-solid.svg"/> 
+                <a aria-label="LinkedIn link" href="https://www.linkedin.com/in/andrea-maiolo-671196141/">
+                  <svg alt="linkdin icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                  </svg>
+                </a>
+                <a aria-label="Github link" href="https://github.com/andrea-maiolo">
+                  <svg alt="github icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                  </svg>
+                </a>
+                <a aria-label="Email" href="mailto:maiolo.m.2@gmail.com">
+                  <svg alt="email icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                  </svg>
+                </a>
+              </span>
+            </div>
+            <div class="hero-img">
+              <img alt="personal picture" id="personal-pic" src="./pictures/personalPic2.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="nonHeroContainers">
+        <div class="about-container">
+          <div class="img-side">
+            <img id="about-img" alt="laptop picture" src="./pictures/arnold-francisca-nPhl2x4fk2s-unsplash.jpg">
+          </div>
+          <div class="text-side">
+            <h3 class="textInEng onDisplay">About me</h3>
+            <h3 class="textInIta hidden">Su di me</h3>
+            <h4 class="textInEng onDisplay">Front end developer fueled by passion to learn and <span
+                class="pencil-underline">create</span></h4>
+            <h4 class="textInIta hidden">Sviluppatore front end alimentato dalla passione per imparare e <span
+                class="pencil-underline">creare</span></h4>
+            <p class="textInEng onDisplay">
+              I am Andrea Maiolo, a 28 years old Italian <span class="highlights">Front-end developer.</span><br />
+              What I love about coding is its nature of <span class="highlights">problem-solving</span>, continuously
+              presenting
+              new puzzles for me to figure out.<br />
+              Web development, in particular, combines the
+              <span class="highlights">creative</span> process of designing with the
+              technical aspect of bringing to life a project.<br />
+              As a Junior Front-End Developer, I learned skills in HTML, CSS, JavaScript, React;
+              which I use to bring to life websites that are responsive and that offer a smooth user experience.<br />
+              Actually for <span class="highlights">hire</span>.
+            </p>
+            <p class="textInIta hidden">
+              Sono Andrea Maiolo, un programmatore <span class="highlights">front-end</span> italiano di 28 anni.<br />
+              Quello che amo della programmazione è il fatto che mi presenta continuamente nuove<span
+                class="highlights">sfide</span> e problemi da risolvere.<br />
+              Lo sviluppo web, in particolare, combina il processo <span class="highlights">creativo</span> del design
+              con l'aspetto tecnico di dare vita a un progetto.<br />
+              Come sviluppatore front-end junior, ho acquisito competenze in HTML, CSS, JavaScript, React; che utilizzo
+              per realizzare siti web che siano reattivi e offrano un'esperienza utente coinvolgente.<br />
+              Attualmente sono disponibile a <span class="highlights">lavorare</span>.
+            </p>
+          </div>
+          <div class="skills">
+            <p id="tech-stack">Tech stack</p>
+            <div class="logos">
+              <ul>
+                <li>
+                  <img alt="html icon" src="./pictures/html5.svg">
+                  <p>HTML</p>
+                </li>
+                <li>
+                  <img alt="css icon" src="./pictures/css3-alt.svg">
+                  <p>CSS</p>
+                </li>
+                <li>
+                  <img alt="javascript icon" src="./pictures/js.svg">
+                  <p>JavaScript</p>
+                </li>
+                <li>
+                  <img alt="react icon" src="./pictures/react.svg">
+                  <p>React</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="nonHeroContainers">
+        <div class="project-content">
+          <p>Portfolio</p>
+          <h3 class="textInEng onDisplay">Each project is a unique <span class="pencil-underline">solution</span> for a
+            need</h3>
+          <h3 class="textInIta hidden">Ogni progetto è una <span class="pencil-underline">soluzione</span> unica per un
+            bisogno
+          </h3>
+          <div class="projects-grid">
+            <div class="single-proj">
+              <div class="proj-img">
+                <a aria-label="Github project repo" target="_blank" href="https://andrea-maiolo.github.io/library-app/">
+                  <img src="./pictures/libraryProject.png" id="proj-1-img" alt="library project" />
+                </a>
+              </div>
+              <div class="proj-text">
+                <h3>BookFindr</h3>
+                <p class="textInEng onDisplay">Explore, collect, and save your favorite reads!</p>
+                <p class="textInIta hidden">Esplora, colleziona e salva le tue letture preferite!</p>
+                <div class="stack">
+                  <p>React</p>
+                  <p>Firebase</p>
+                  <p>Css</p>
+                </div>
+                <div class="links">
+                  <a aria-label="Github project repo" target="_blank" class="anchor-proj"
+                    href="https://github.com/andrea-maiolo/library-app">Repo
+                    <img alt="github icon" class="icon-proj" src="./pictures/github.svg" />
+                  </a>
+                  <a aria-label="Live site" target="_blank" class="anchor-proj"
+                    href="https://andrea-maiolo.github.io/library-app/">Live
+                    <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="single-proj">
+              <div class="proj-text">
+                <h3>WeatherWise</h3>
+                <p class="textInEng onDisplay">Your personal weather forecast companion. Stay informed with real-time
+                  weather
+                  updates!</p>
+                <p class="textInIta hidden">Il tuo compagno personale per le previsioni del tempo. Resta informato con
+                  aggiornamenti
+                  meteorologici in tempo reale!</p>
+                <div class="stack">
+                  <p>React</p>
+                  <p>Css</p>
+                </div>
+                <div class="links">
+                  <a aria-label="Github project repo" target="_blank" class="anchor-proj"
+                    href="https://github.com/andrea-maiolo/weather-app/">Repo
+                    <img alt="github icon" class="icon-proj" src="./pictures/github.svg" />
+                  </a>
+                  <a aria-label="Live site" target="_blank" class="anchor-proj"
+                    href="https://andrea-maiolo.github.io/weather-app/">Live
+                    <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg" />
+                  </a>
+                </div>
+              </div>
+              <div class="proj-img">
+                <a aria-label="Github project repo" target="_blank" href="https://andrea-maiolo.github.io/weather-app/">
+                  <img alt="weather-app project" id="proj-2-img" src="./pictures/weather.png" />
+                </a>
+              </div>
+            </div>
+            <div class="single-proj">
+              <div class="proj-img">
+                <a aria-label="Github project repo" target="_blank" href="https://andrea-maiolo.github.io/eCommerce/">
+                  <img alt="e-commerce project" id="proj-3-img" src="./pictures/ecomProject.png" />
+                </a>
+              </div>
+              <div class="proj-text">
+                <h3>Shoppe</h3>
+                <p class="textInEng onDisplay">Buy sdd and hdd cards for any computer!</p>
+                <p class="textInIta hidden">Acquista schede SSD e HDD per qualsiasi computer!</p>
+                <div class="tech stack">
+                  <p>React</p>
+                  <p>Css</p>
+                </div>
+                <div class="links">
+                  <a aria-label="Github project repo" target="_blank" class="anchor-proj"
+                    href="https://github.com/andrea-maiolo/eCommerce/">Repo
+                    <img alt="github icon" class="icon-proj" src="./pictures/github.svg" />
+                  </a>
+                  <a aria-label="Live site" target="_blank" class="anchor-proj"
+                    href="https://andrea-maiolo.github.io/eCommerce/">Live
+                    <img alt="github icon" class="icon-proj" src="./pictures/arrow-up-right-from-square-solid.svg" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="nonHeroContainers">
+        <div class="contact-content">
+          <div class="contact-title">
+            <p class="textInEng onDisplay">contact</p>
+            <p class="textInIta hidden">contatti</p>
+            <h3 class="textInEng onDisplay">Don't be shy let's <span class="pencil-underline">get in touch</span></h3>
+            <h3 class="textInIta hidden">Non essere timido, mettiamoci in <span
+                class="pencil-underline">contatto</span>!</h3>
+          </div>
+          <div class="contact-icons">
+            <div class="singleIcon leftIcon">
+              <span>
+                <img alt="email icon" id="mailContactIcon" src="./pictures/envelope-solid.svg" />
               </span>
               <div class="contact-info">
                 <h4>Email</h4>
-                <a aria-label="Email"  href="mailto:maiolo.m.2@gmail.com">maiolo.m.2@gmail.com</a>
-                </div>
+                <a aria-label="Email" href="mailto:maiolo.m.2@gmail.com">maiolo.m.2@gmail.com</a>
               </div>
-              <div class="singleIcon rightIcon">
-                <span>
-                  <img alt="LinkedIn icon" id="inContactIcon" src="./pictures/linkedin.svg"/> 
-                </span>
-                <div class="contact-info">
-                  <h4>LinkedIn</h4>
-                  <a aria-label="LinkedIn link"  href="https://www.linkedin.com/in/andrea-maiolo-671196141/">LinkedIn</a>
-                </div>
+            </div>
+            <div class="singleIcon rightIcon">
+              <span>
+                <img alt="LinkedIn icon" id="inContactIcon" src="./pictures/linkedin.svg" />
+              </span>
+              <div class="contact-info">
+                <h4>LinkedIn</h4>
+                <a aria-label="LinkedIn link" href="https://www.linkedin.com/in/andrea-maiolo-671196141/">LinkedIn</a>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer>
-        <div class="nonHeroContainers">
-          <div class="footerc">
-            <h3 id="nameFooter"><span class="pencil-underline-footer">Andrea Maiolo</a></h3>
-            <div class="footerc-socials">
-              <a aria-label="twitter personal profile"  target="_blank" href="https://twitter.com/@AndreaMaiolo_" >Twitter</a>
-              <a aria-label="github personal profile"  target="_blank" href="https://github.com/andrea-maiolo">Github</a>
-              <a aria-label="linkedin personal profile"  target="_blank" href="https://www.linkedin.com/in/andrea-maiolo-671196141/">LinkedIn</a>
-            </div>
-            <p>Coded with ♥ Copyright © Andrea Maiolo 2023</p>
+    <footer>
+      <div class="nonHeroContainers">
+        <div class="footerc">
+          <h3 id="nameFooter"><span class="pencil-underline-footer">Andrea Maiolo</a></h3>
+          <div class="footerc-socials">
+            <a aria-label="twitter personal profile" target="_blank"
+              href="https://twitter.com/@AndreaMaiolo_">Twitter</a>
+            <a aria-label="github personal profile" target="_blank" href="https://github.com/andrea-maiolo">Github</a>
+            <a aria-label="linkedin personal profile" target="_blank"
+              href="https://www.linkedin.com/in/andrea-maiolo-671196141/">LinkedIn</a>
           </div>
+          <p>Coded with ♥ Copyright © Andrea Maiolo 2023</p>
         </div>
-      </footer>
-    </div>
-  </body>
-  <script src="main.js"></script>
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="main.js"></script>
+
 </html>
