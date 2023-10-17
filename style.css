@@ -139,35 +139,6 @@ nav > ul > li > a:hover::after {
 }
 
 /* Button 10 */
-.toggle-button-cover {
-  display: table-cell;
-  position: relative;
-  width: 200px;
-  height: 140px;
-  box-sizing: border-box;
-}
-
-.button-cover {
-  height: 100px;
-  margin: 20px;
-  background-color: #fff;
-  box-shadow: 0 10px 20px -8px #c5d6d6;
-  border-radius: 4px;
-}
-
-.button-cover:before {
-  counter-increment: button-counter;
-  content: counter(button-counter);
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: #d7e3e3;
-  font-size: 12px;
-  line-height: 1;
-  padding: 5px;
-}
-
-.button-cover,
 .knobs,
 .layer {
   position: absolute;
@@ -236,7 +207,7 @@ nav > ul > li > a:hover::after {
 #button-10 .knobs:before {
   content: "";
   left: 4px;
-  background-color: #03a9f4;
+  background-color: #147efb;
 }
 
 #button-10 .knobs:after {
@@ -258,7 +229,7 @@ nav > ul > li > a:hover::after {
 
 #button-10 .checkbox:checked + .knobs:before {
   left: 42px;
-  background-color: #f44336;
+  background-color: #008c45;
 }
 
 #button-10 .checkbox:checked + .knobs:after {
