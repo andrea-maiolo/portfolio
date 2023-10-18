@@ -22,9 +22,9 @@ function showMenu() {
   closeIcon.classList.toggle("closed-menu");
 }
 
-let textInEng = document.getElementsByClassName("textInEng");
-let textInIta = document.getElementsByClassName("textInIta");
-let buttonSwitch = document.querySelector("#langButton");
+const textInEng = document.getElementsByClassName("textInEng");
+const textInIta = document.getElementsByClassName("textInIta");
+const buttonSwitch = document.querySelector("#langButton");
 
 buttonSwitch.addEventListener("click", changeLang);
 
@@ -39,3 +39,12 @@ function changeLang(e) {
     ele.classList.toggle("onDisplay");
   });
 }
+
+const expandeButtons = document.querySelectorAll(".expandeButton");
+const repos = document.querySelectorAll(".expandible");
+
+expandeButtons.forEach((button, index) => {
+  button.addEventListener("click", function () {
+    repos[index].classList.toggle("hidden");
+  });
+});
