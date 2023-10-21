@@ -573,6 +573,7 @@ nav > ul > li > a:hover::after {
   color: #2d2e32;
   margin: 0 10px;
   line-height: 1.8rem;
+  display: none;
 }
 
 .stack {

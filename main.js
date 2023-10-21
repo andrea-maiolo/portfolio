@@ -45,6 +45,10 @@ const repos = document.querySelectorAll(".expandible");
 
 expandeButtons.forEach((button, index) => {
   button.addEventListener("click", function () {
-    repos[index].classList.toggle("hidden");
+    if (repos[index].style.display == "none") {
+      repos[index].style.display = "block";
+    } else {
+      repos[index].style.display = "none";
+    }
   });
 });
